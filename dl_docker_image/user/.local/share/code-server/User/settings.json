@@ -1,0 +1,13 @@
+{
+    "update.mode": "none",
+    "extensions.autoUpdate": false,
+    "files.trimTrailingWhitespace": true,
+    "workbench.colorTheme": "Default Dark+",
+    "editor.bracketPairColorization.enabled": true,
+    "[cpp]": {
+        "files.insertFinalNewline": true
+    },
+    "[python]": {
+        "files.insertFinalNewline": true
+    }
+}

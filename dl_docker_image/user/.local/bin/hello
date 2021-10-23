@@ -1,0 +1,13 @@
+#!/bin/bash
+if [ "$#" -ne 3 ]; then
+  echo "usage: $0 GIT_USERNAME GIT_NAME GIT_EMAIL"
+  exit 1
+fi
+USERNAME="$1"
+NAME="$2"
+EMAIL="$3"
+
+git config --global credential.helper store
+git config --global user.name "$GIT_NAME"
+git config --global user.email "$GIT_EMAIL"
+git clone https://$USERNAME:vis.iitp.ru/gitlab/owlguardcv/owlguardcv.git ~/NVI
